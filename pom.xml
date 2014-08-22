@@ -11,9 +11,9 @@
     <groupId>com.github.jjagged</groupId>
     <artifactId>metrics-statsd</artifactId>
     <name>Metrics Statsd Support</name>
-    <version>basis-1.0.1-SNAPSHOT</version>
+    <version>1.0.1-basis-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <url>http://github.com/jjagged/metrics-statsd/</url>
+    <url>http://github.com/benson-basis/metrics-statsd/</url>
     <description>Statsd reporter for codahale/metrics with support for tags.</description>
 
     <properties>
@@ -50,15 +50,15 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:ssh://github.com/jjagged/metrics-statsd.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/jjagged/metrics-statsd.git</developerConnection>
-        <url>https://github.com/jjagged/metrics-statsd</url>
+        <connection>scm:git:git@github.com:benson-basis/metrics-statsd.git</connection>
+        <developerConnection>scm:git:git@github.com:benson-basis/metrics-statsd.git</developerConnection>
+        <url>https://github.com/benson-basis/metrics-statsd</url>
       <tag>HEAD</tag>
   </scm>
 
     <issueManagement>
         <system>github</system>
-        <url>https://github.com/jjagged/metrics-statsd/issues#issue/</url>
+        <url>https://github.com/benson-basis/metrics-statsd/issues#issue/</url>
     </issueManagement>
 
     <distributionManagement>
