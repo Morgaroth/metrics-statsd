@@ -11,7 +11,7 @@
     <groupId>com.github.jjagged</groupId>
     <artifactId>metrics-statsd</artifactId>
     <name>Metrics Statsd Support</name>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>basis-1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <url>http://github.com/jjagged/metrics-statsd/</url>
     <description>Statsd reporter for codahale/metrics with support for tags.</description>
@@ -119,12 +119,25 @@
     </dependencies>
 
     <build>
+      <pluginManagement>
+        <plugins>
+          <plugin>
+            <artifactId>maven-deploy-plugin</artifactId>
+            <version>2.8.1</version>
+            <configuration>
+              <altReleaseDeploymentRepository>basistech.repo::default::http://maven.basistech.net/nexus/content/repositories/releases/</altReleaseDeploymentRepository>
+              <altSnapshotDeploymentRepository>basistech.snapshot.repo::default::http://maven.basistech.net/nexus/content/repositories/snapshots/</altSnapshotDeploymentRepository>
+            </configuration>
+          </plugin>
+        </plugins>
+      </pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
                 <version>1.4</version>
                 <configuration>
+                    <skip>true</skip>
                     <useAgent>${gpgGuiPassphrase}</useAgent>
                     <keyname>${gpgKeyId}</keyname>
                 </configuration>
